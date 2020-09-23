@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Infinity Empório</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/navstyle.css">
+<link rel="stylesheet" type="text/css" href="css/carrinho.css">
+<script src="js/navbar.js"></script>
+
+
+</head>
+<body>
+
+  <!-- navbar-->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#"><img src="imagens/logo2-removebg.png" width="90px" style="margin-top: -20px; margin-bottom: -15px;" ></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" style="color: whitesmoke;" href="index.html">PÁGINA INICIAL <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color: whitesmoke;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             PRODUTOS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="bolos.html">BOLOS</a>
+              <a class="dropdown-item" href="cupcakes.html">CUPCAKES</a>
+              <a class="dropdown-item" href="diversos.html">DOCES DIVERSOS</a>
+              <a class="dropdown-item" href="ingredientes.html">INGREDIENTES</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color: whitesmoke;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PERFIL
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="cadastro/cadastro/cadastro.html">CADASTRO</a>
+              <a class="dropdown-item" href="login.html">LOGIN</a>
+          </li>
+        
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" id="valor" placeholder="Digite aqui..." aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" id="btn-pesquisa" type="button"onclick="redirect(valor.value)">Pesquisar</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <!-- jumbotron-->
+
+  <div class="jumbotron" style="background-image: url(imagens/temas/fundo.jpg);">
+    <div class="container text-center">
+      <h1 style="margin-top: 100px;">INGREDIENTES</h1>      
+        
+      </div>
+    </div>
+
+<!-- carrinho -->
+    <div class="row text-center">
+        <div class="col">
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#carrinho"><img style="height: 1em; align-self: center" src="imagens/carrinho.png"> Carrinho (<span class="total-contagem"></span>)</button>
+      </div>
+    </div>
+
+
+<!-- produtos -->
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card zoom" style="width: 20rem;">
+  <img class="card-img-top" src="imagens/confeito.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Confeito Pó de Meteoros</h4>
+    <p class="card-text">Preço: R$15,00</p>
+    <a href="#" data-nome="Confeito-Pó-De-Meteoros" data-preco="15.00" class="add-ao-carrinho btn btn-primary">Adicionar ao carrinho</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+      <div class="card zoom" style="width: 20rem;">
+  <img class="card-img-top" src="imagens/fruta.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Fruta Floresta de Marte</h4>
+    <p class="card-text">Preço: R$15,00 (o quilo)</p>
+    <a href="#" data-nome="Fruta-Floresta-De-Marte" data-preco="15.00" class="add-ao-carrinho btn btn-primary">Adicionar ao carrinho</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card zoom" style="width: 20rem;">
+  <img class="card-img-top" src="imagens/pocao.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Suco Netuno</h4>
+    <p class="card-text">Preço: R$20,00</p>
+    <a href="#" data-nome="Suco-Netuno" data-preco="20.00" class="add-ao-carrinho btn btn-primary">Adicionar ao carrinho</a>
+  </div>
+</div>
+      </div>
+    </div>
+</div> <br> <br> 
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card zoom" style="width: 20rem;">
+<img class="card-img-top" src="imagens/po.jpg" alt="Card image cap">
+<div class="card-block">
+  <h4 class="card-title">Confeito Pó de Estrelas</h4>
+  <p class="card-text">Preço: R$10,00</p>
+  <a href="#" data-nome="Confeito-Pó-De-Estrelas" data-preco="10.00" class="add-ao-carrinho btn btn-primary">Adicionar ao carrinho</a>
+</div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card zoom" style="width: 20rem;">
+<img class="card-img-top" src="imagens/pocao2.jpg" alt="Card image cap">
+<div class="card-block">
+  <h4 class="card-title">Suco Marte</h4>
+  <p class="card-text">Preço: R$8,00</p>
+  <a href="#" data-nome="Suco-Marte" data-preco="8.00" class="add-ao-carrinho btn btn-primary">Adicionar ao carrinho</a>
+</div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card zoom" style="width: 20rem;">
+<img class="card-img-top" src="imagens/cacau.jpg" alt="Card image cap">
+<div class="card-block">
+  <h4 class="card-title">Cacau Júpiter</h4>
+  <p class="card-text">Preço: R$20,00 (o quilo)</p>
+  <a href="#" data-nome="Cacau-Júpiter" data-preco="20.00" class="add-ao-carrinho btn btn-primary">Adicionar ao carrinho</a>
+</div>
+</div>
+    </div>
+  </div>
+</div>
+
+  
+<!-- Modal -->
+<div class="modal fade" id="carrinho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Carrinho</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="mostrar-carrinho table">
+          
+        </table>
+        <div>Preço total: R$<span class="total-carrinho"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button class="limpar-carrinho btn btn-danger">Limpar</button>
+        <button type="button" onclick="window.location.href='compra.html'" class=" btn btn-primary">Continuar compra</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- footer-->
+
+<footer class="container">
+  <p class="float-right"><a style="color: rgb(70, 43, 116);" href="#">Voltar ao topo</a></p>
+  <p>&copy; Infinity Empório, 2018-2020</p>
+</footer>
+</main>
+
+  </script>
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/carrinho.js" type="text/javascript"></script>
+  <script src="js/busca.js" type="text/javascript"></script>
+ 
+    <!--vlibras-->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+</body>
+</html>

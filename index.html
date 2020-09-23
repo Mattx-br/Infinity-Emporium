@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Empório</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="js/busca.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+<!--navbar-->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"><img src="imagens/logo2-removebg.png" width="90px" style="margin-top: -20px; margin-bottom: -15px;" ></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><span id="repolho">Página <span id="repolho"></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Produtos
+              </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="bolos.html">BOLOS</a>
+                            <a class="dropdown-item" href="cupcakes.html">CUPCAKES</a>
+                            <a class="dropdown-item" href="diversos.html">DOCES DIVERSOS</a>
+                            <a class="dropdown-item" href="ingredientes.html">INGREDIENTES</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Perfil
+              </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="cadastro/cadastro/cadastro.html"> Cadastro</a>
+                            <a class="dropdown-item" href="login.html">Login</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" id="valor" placeholder="Digite aqui..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" id="btn-pesquisa" type="button"onclick="redirect(valor.value)">Pesquisar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    
+    <!--carrossel-->
+    <div id="demo" class="carousel slide" data-ride="carousel" style="margin-bottom: 2em;">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active" class="responsive">
+                <img src="imagens/temas/fj.jpg"  alt="Los Angeles" width="100%" height="570">
+            </div>
+            <div class="carousel-item" class="responsive">
+                <img src="imagens/temas/fj2.jpeg" alt="Chicago" width="100%" height="570">
+            </div>
+            <div class="carousel-item" class="responsive">
+                <img src="imagens/temas/fj3.jpg" alt="New York" width="100%" height="570">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
+
+    <div class="container marketing">
+
+        <div class="row">
+            <div class="col-lg-4">
+                <a href="https://www.google.com/maps/place/Sodi%C3%AA+Doces/@-23.9649836,-46.3343484,17z/data=!4m12!1m6!3m5!1s0x94ce030f92d80e1f:0xa4c4ef27ba8cfedf!2sShopping+Patio+Iporanga!8m2!3d-23.9649836!4d-46.3321597!3m4!1s0x94ce03107620e0b7:0xd0d74ba12666d1ff!8m2!3d-23.9667567!4d-46.3353116" target="blank">
+                <img class="rounded-circle" src="imagens/maps.jpg" alt="Generic placeholder image" width="140" height="140"></a>
+                <h2>Loja Física</h2>
+                <p>Venha visitar nossa loja! Estamos localizados na Rua Pereira Barreto, 38 - Gonzaga, Santos - SP. Horário de funcionamento:
+                    8h-18h de Terça a Sábado.
+                </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <a href="https://www.instagram.com/?hl=pt-br" target="blank"><img class="rounded-circle" src="imagens/insta.webp" alt="Generic placeholder image" width="140" height="140"></a>
+                <h2>Instagram</h2>
+                <p>Nos siga no Instagram para acompanhar as novidades. Se postar sua encomenda nos stories, marque nosso perfil.</p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <a href="https://www.google.com/gmail/about/" target="blank">
+                <img class="rounded-circle" src="imagens/gmail.png" alt="Generic placeholder image" width="140" height="140"></a>
+                <h2>Email</h2>
+                <p> Pra qualquer problema que possa ocorrer, nos contate no Email. Sua satisfação é muito importante para nós!</p>
+
+            </div>
+            <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <!-- produtos -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7" id="colunas-extremidade">
+                <h2 class="featurette-heading">Especiais: <span class="subtitle">Festa Junina.</span></h2>
+                <p class="lead"> Como estamos em tempo de festas juninas, o Infinity Empório conta com alguns doces temáticos deliciosos!</p>
+                <p><a class="btn btn-secondary" id="btn-ver-produto" href="especiais.html" role="button">Ver produto</a></p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid mx-auto destaques-index" src="imagens/temas/maçã.jpg" alt="Generic placeholder image">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2" id="coluna-meio">
+                <h2 class="featurette-heading">Bolo Andrômeda </h2>
+                <p class="lead"> Feito com ingredientes da Galáxia Andrômeda, esse é bolo mas vendido da nossa loja.</p>
+                <p><a class="btn btn-secondary" id="btn-ver-produto" href="bolos.html" role="button">Ver produto </a></p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid mx-auto destaques-index" src="imagens/bolo.jpg" alt="Generic placeholder image">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7" id="colunas-extremidade">
+                <h2 class="featurette-heading">Cupcake Pó De Estrelas. <span class="subtitle">Lindo, não?</span></h2>
+                <p class="lead">Nosso coberto de pó de estrelas é o mais vendido de sua categoria. Venha conferir! </p>
+                <p><a class="btn btn-secondary" id="btn-ver-produto" href="cupcakes.html" role="button">Ver produto</a></p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid mx-auto destaques-index" src="imagens/cupcake.jpg" alt="Generic placeholder image">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+    </div>
+    <!-- /.container -->
+
+
+    <!--footer-->
+    <footer class="container">
+        <p class="float-right"><a style="color: rgb(70, 43, 116);" href="#">Voltar ao topo</a></p>
+        <p>&copy; Infinity Empório, 2018-2020</p>
+    </footer>
+    </main>
+
+    <!-- Principal JavaScript do Bootstrap
+    ================================================== -->
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/navbar.js"></script>
+
+    <!--vlibras-->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+    <script>
+        document.getElementById("repolho").innerHTML = localStorage.getItem("textvalue");
+    </script>
+</body>
+
+</html>

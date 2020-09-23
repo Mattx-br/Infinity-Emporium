@@ -1,0 +1,58 @@
+.navbar {
+    background-color: rgb(70, 43, 116);
+}
+
+.nav-link {
+    color: whitesmoke;
+}
+
+.nav-link:hover {
+    color: whitesmoke;
+}
+
+#btn-pesquisa {
+    border-color: whitesmoke;
+    color: whitesmoke;
+}
+
+#btn-pesquisa:hover {
+    background-color: whitesmoke;
+    color: rgb(70, 43, 116);
+}
+
+.destaques-index {
+    height: 300px;
+    width: 500px;
+}
+
+#coluna-meio {
+    background-color: #cab6fb;
+    border-radius: 5px;
+}
+
+#colunas-extremidade {
+    background-color: rgb(70, 43, 116);
+    border-radius: 5px;
+}
+
+.featurette-heading {
+    color: #fff;
+}
+
+.lead {
+    color: #fff;
+}
+
+.subtitle {
+    color: rgb(247, 123, 175);
+} 
+ 
+#btn-ver-produto{ 
+    margin-top: 100px;
+    background-color: rgb(70, 43, 116);
+    background-image: linear-gradient(to bottom right,#61247e, rgb(214, 90, 193));
+    border: none;
+}
+h2{
+    margin-top: 10px;
+}

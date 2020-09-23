@@ -1,0 +1,34 @@
+.container{ 
+   background-color: white;
+  
+   padding: 1em;
+}
+.btn{
+    margin-right: 1em;
+    margin-top: 2em;
+    background-image: linear-gradient(to bottom right,rgb(97, 36, 126), rgb(214, 90, 193));
+    border: none;
+  
+}
+h1{ 
+    padding: 1em;
+    text-align: center;
+    color: rgb(97, 36, 126);
+
+}
+body{
+    background-image: linear-gradient(to bottom right,rgb(97, 36, 126), rgb(214, 90, 193));
+}
+input{
+    background-color: rgb(97, 36, 126) 
+}
+label{
+    font-size: large;
+}
+
+.validar{
+    border-radius: 5px;
+    font-size: 10px;
+    background-color: rgb(189, 108, 189);
+    margin-top: 1em;
+}

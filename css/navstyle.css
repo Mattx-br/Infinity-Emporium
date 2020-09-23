@@ -1,0 +1,96 @@
+body {
+    background: url(background/bg.jpg);
+    max-width: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+
+/*---<navbar>---*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: #fff;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    display: block;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+header.sticky .logo {
+    color: #fff;
+}
+
+
+.navbar {
+    background-color: rgb(70, 43, 116);
+}
+
+.nav-link {
+    color: whitesmoke;
+}
+
+.nav-link:hover {
+    color: whitesmoke;
+}
+
+#btn-pesquisa {
+    border-color: whitesmoke;
+    color: whitesmoke;
+}
+
+#btn-pesquisa:hover {
+    background-color: whitesmoke;
+    color: rgb(70, 43, 116);
+}
+
+
+/*---</navbar>---*/
